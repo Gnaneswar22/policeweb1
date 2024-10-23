@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srikakulam Police Department</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #19dfdf;
+            padding: 0;
+            color: white;
+            position: relative;
+        }
+        .logo {
+            width: 100px;
+            padding: 5px;
+        }
+        .recent_activity {
+            background-color: #61ddd3;
+            color: white;
+        }
+        .header-title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 35px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: rgb(114, 231, 229);
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.112);
+            border-radius: 5px;
+        }
+        /* Dropdown styles */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgb(22, 138, 173);
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            width: 150px;
+            z-index: 1;
+            border-radius: 10px;
+        }
+        nav ul li ul li a {
+            padding: 10px;
+            width: auto;
+            display: block;
+        }
+        nav ul li ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.112);
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 400px; /* Set height to your desired size */
+            overflow: hidden;
+        }
+        .image-container img {
+           
+            position: absolute;
+            width: 100%;
+            opacity: 1;
+            animation: fadeAnimation 12s infinite;
+        }
+        /* Animations for each image */
+        .image-container img:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .image-container img:nth-child(2) {
+            animation-delay: 3s;
+        }
+        .image-container img:nth-child(3) {
+            animation-delay: 6s;
+        }
+        .image-container img:nth-child(4) {
+            animation-delay: 9s;
+        }
+        @keyframes fadeAnimation {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 1;
+            }
+            75% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* Twitter Container */
+        .twitter-section {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            display: flex;
+            margin-top: 10px; /* Adds space between sections */
+        }
+        .twitter-container {
+            display: flexbox;
+            max-width: 350px;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+       .fb-post{
+        display: flexbox;
+            max-width: 350px;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding-left: 20px;
+            align-content: center;
+       }
+       .fb-post h2{
+        font-size: 15px;
+       }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <!-- Left Logo -->
+            <div>
+                <img src="images/Appolice.png" alt="Left Logo" class="logo">
+            </div>
+
+            <!-- Center Heading -->
+            <h1 class="header-title">Srikakulam Police Department</h1>
+
+            <!-- Right Logo -->
+            <div>
+                <img src="images/Sklmlogo.png" alt="Right Logo" class="logo">
+            </div>
+        </header>
+
+        <!-- Recent Activity Bar -->
+        <div class="recent_activity">
+            <marquee>RECENT ACTIVITY.</marquee>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a>
+                    <ul>
+                        <li><a href="#mission">Mission</a></li>
+                        <li><a href="#vision">Vision</a></li>
+                        <li><a href="#history">History</a></li>
+                    </ul>
+                </li>
+                <li><a href="#services">Services</a>
+                    <ul>
+                        <li><a href="#patrolling">Patrolling</a></li>
+                        <li><a href="#community">Community Programs</a></li>
+                        <li><a href="#emergency">Emergency Response</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Image Container Section -->
+    <section class="image-container">
+        <img src="images/sp.png" alt="SP Image">
+        <img src="images/station.png" alt="Station Image">
+        <img src="images/sklm.jpg" alt="SKLM Image">
+        <img src="images/plc.jpg" alt="PLC Image">
+    </section>
+
+    <!-- Twitter Container Section -->
+    <section class="twitter-section">
+        <div class="twitter-container">
+            <!-- Embedded Twitter Timeline -->
+            <a class="twitter-timeline" data-width="400" data-height="450" href="https://twitter.com/POLICESRIKAKULM?ref_src=twsrc%5Etfw">Tweets by POLICESRIKAKULM</a>
+            <script async src="https://platform.twitter.com/widgets.js"></script>
+        </div>
+
+
+
+       
+        <div class="fb-post">
+              <h2> Srikakulam Police Department</h2>
+           <div class="fb-page" 
+                    data-href="https://www.facebook.com/profile.php?id=100068435118920" 
+                    data-tabs="timeline" 
+                    data-width="400" 
+                    data-height="400" 
+                    data-small-header="false" 
+                    data-adapt-container-width="true" 
+                    data-hide-cover="false" 
+                    data-show-facepile="true">
+                  <blockquote cite="https://www.facebook.com/profile.php?id=100068435118920" 
+                          class="fb-xfbml-parse-ignore">
+                       <a href="https://www.facebook.com/profile.php?id=100068435118920">Srikakulam Police Department</a>
+                  </blockquote>
+           </div>
+                      <script async defer crossorigin="anonymous" 
+                      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0"></script>
+       </div>
+    </section>
+</body>
+</html>
