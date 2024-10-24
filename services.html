@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srikakulam Police Department</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #19dfdf;
+            padding: 0;
+            color: white;
+            position: relative;
+        }
+        .logo {
+            width: 100px;
+            padding: 5px;
+        }
+        .recent_activity {
+            background-color: #61ddd3;
+            color: white;
+        }
+        .header-title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 35px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: rgb(114, 231, 229);
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.112);
+            border-radius: 5px;
+        }
+        /* Dropdown styles */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgb(22, 138, 173);
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            width: 150px;
+            z-index: 1;
+            border-radius: 10px;
+        }
+        nav ul li ul li a {
+            padding: 10px;
+            width: auto;
+            display: block;
+        }
+        nav ul li ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.112);
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px;
+        }
+
+        /* Hamburger menu on smaller screens */
+        @media only screen and (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .navbar ul {
+                display: none;
+                flex-direction: column;
+                background-color: #00509e;
+                width: 100%;
+                text-align: center;
+            }
+
+            .navbar ul.show {
+                display: flex;
+            }
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .services-head {
+            font-size: 24px;
+            color: #00509e;
+            margin-bottom: 20px;
+        }
+
+        .service-icons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .service-item {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .service-item img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #19dfdf;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <!-- Left Logo -->
+            <div>
+                <img src="images/Appolice.png" alt="Left Logo" class="logo">
+            </div>
+
+            <!-- Center Heading -->
+            <h1 class="header-title">Srikakulam Police Department</h1>
+
+            <!-- Right Logo -->
+            <div>
+                <img src="images/Sklmlogo.png" alt="Right Logo" class="logo">
+            </div>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a>
+                    <ul>
+                        <li><a href="#mission">Mission</a></li>
+                        <li><a href="#vision">Vision</a></li>
+                        <li><a href="#history">History</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">Services</a>
+                    <ul>
+                        <li><a href="#patrolling"></a></li>
+                        <li><a href="#community">Community Programs</a></li>
+                        <li><a href="#emergency">Emergency Response</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+    <div class="container">
+        <h2 class="services-head">Services</h2>
+
+        <!-- Service Icons Section -->
+        <div class="service-icons">
+            <div class="service-item">
+               <a href="https://ceir.sancharsaathi.gov.in/Request/CeirUserBlockRequestDirect.jsp" class="imgs"> <img src="lost.png.jpeg" alt="Lost Report Icon" />
+                <p>Lost Report</p> </a>
+            </div>
+            <div class="service-item">
+                <a href="fir.html" class="imgs"><img src="fir.png.png" alt="View FIR Icon" />
+                <p>View FIR</p></a>
+            </div>
+            <div class="service-item">
+               <a href="domestic.html" class="imgs"><img src="domvio.png.png" alt="Domestic Violence Icon" />
+                <p>Domestic Violence</p></a>
+            </div>
+            <div class="service-item">
+                <a href="accident.html" class="imgs">  <img src="aa.png.png" alt="Accident Analysis Icon" />
+                <p>Accident Analysis</p></a>
+            </div>
+            <div class="service-item">
+                <a href="https://services.india.gov.in/service/detail/apply-online-for-use-of-loud-speakers-1" class="imgs"> <img src="speaker.png.jpeg"  />
+                    <p>LOUD SPEAKER PERMISSION</p></a>
+                </div>
+            </div>
+        </div>
+    
+
+
+    <!-- Footer Section -->
+    <footer >
+        <p>&copy; 2024 Srikakulam Police Department. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.navbar ul');
+            navMenu.classList.toggle('show');
+        }
+    </script>
+   
+</body>
+
+</html>
